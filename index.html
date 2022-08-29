@@ -8,6 +8,23 @@
     <link a href = "styles.css"></link>
 </head>
 <body>
+
+    <div id="container">
+        <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p><p id="cycles" class="label">Cycles:</p>
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <p id="workMinutes">25</p><p class="semicolon">:</p><p id="workSeconds">00</p>
+        </div>
+
+        <div id="break-timer" class="timer">
+            <p id="breakMinutes">05</p><p class="semicolon">:</p><p id="breakSeconds">00</p>
+        </div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+
+        <p id="counter" class="timer">0</p>
     <!-- Need:
     big count down timer container
     how long total (ex 6hrs loop)--- big countdown timer
