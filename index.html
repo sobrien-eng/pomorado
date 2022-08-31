@@ -9,32 +9,37 @@
 </head>
 
 <body>
-<div class="bigTimer">
-    <p id="bigTimer" class="label">Overall time</p>
-    <div id="work-timer" class="timer">
-        <input type="text" id="workMinutes" placeholder="00"/><div>:</div> <input class="workSeconds" placeholder="00"/>
-    </div>
-
-</div>
-    <div id="container">
-        <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p>
-        <!--Work Timer-->
-        <div id="work-timer" class="timer">
-            <div id="workMinutes" placeholder="00"></div><div class="semicolon">:</div><div id="workSeconds" placeholder="00"></div>
+    <div class="container">
+        <div class="bigTimer">
+            <p id="bigTimer" class="label">Overall time</p>
+            <div class="theBigTimer">
+                <div id="work-timer" class="timer">
+                    <input type="text" id="workMinutes" placeholder="00"/><div>:</div> <input class="workSeconds" placeholder="00"/>
+                </div>
+            </div>
         </div>
 
-        <div id="break-timer" class="timer">
-            <div id="breakMinutes" placeholder="00"></div><div class="semicolon">:</div><div id="breakSeconds" placeholder="00"></div>
+            <div id="container">
+                <p id="work" class="label">Work:</p><p id="break" class="label">Break:</p>
+                <!--Work Timer-->
+                <div id="work-timer" class="timer">
+                    <input type="text" id="workMinutes" placeholder="00"/><div>:</div> <input class="workSeconds" placeholder="00"/>
+                </div>
+        
+                <div id="break-timer" class="timer">
+                    <input type="text" id="breakMinutes" placeholder="00"/><div>:</div> <input class="breakSeconds" placeholder="00"/>
+                </div>
+                <button id="start" class="btn">Start</button>
+                <button id="stop" class="btn">Pause</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <div class="cycleContanier">
+            
+                <p id="cycles" class="label">Cycles:</p>
+                    <p id="counter" class="timer">0</p>
+            </div>
         </div>
-        <button id="start" class="btn">Start</button>
-        <button id="stop" class="btn">Pause</button>
-        <button id="reset" class="btn">Reset</button>
-    </div>
-<div class="cycleContanier">
-
-    <p id="cycles" class="label">Cycles:</p>
-        <p id="counter" class="timer">0</p>
-</div>
+        
     <!-- Need:
     big count down timer container
     how long total (ex 6hrs loop)--- big countdown timer
