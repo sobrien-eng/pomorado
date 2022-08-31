@@ -12,8 +12,8 @@ var deadline = new Date() ;
   
 var x = setInterval(function() {
   
-var now = new Date().getTime();
-var t = deadline - now;
+    var now = new Date().getTime();
+    var timeleft = countDownDate - now;
 var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
 var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((t % (1000 * 60)) / 1000);
